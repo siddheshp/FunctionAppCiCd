@@ -26,8 +26,8 @@ namespace FunctionApp1
             name = name ?? data?.name;
 
             string responseMessage = string.IsNullOrEmpty(name)
-                ? "v1: This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"v1: Hello, {name}. This HTTP triggered function executed successfully.";
+                ? "v2: This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                : $"v2: Hello, {name}. This HTTP triggered function executed successfully.";
 
             return new OkObjectResult(responseMessage);
         }
